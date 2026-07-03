@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Revizii Aer Conditionat Cluj | Clima Expert HVAC</title>
+<meta name="description" content="Revizie tehnica A.C. in Cluj-Napoca: presiuni, traseu frigorific, filtre, electric. Recomandat anual, inainte de sezonul cald.">
+<meta name="theme-color" content="#0F2545">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+<nav class="nav" id="nav">
+<div class="nav-inner">
+  <a href="../../index.html" class="nav-logo"><img src="../../images/logo.jpg" alt="Clima Expert HVAC"></a>
+  <button class="hamburger" id="hb" aria-label="Meniu"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nl">
+    <li class="nav-item">
+      <button data-dd>Servicii HVAC <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="dd">
+        <div class="dd-item">
+          <button class="dd-link" data-dd>
+            <span class="dd-ico ico-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M6 7V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3"/><line x1="6" y1="12" x2="6" y2="16"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="18" y1="12" x2="18" y2="16"/></svg></span>Climatizare <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="dd2">
+            <a href="../../clima/industriala/index.html" class="dd-link"><span class="dd-ico ico-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M6 7V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3"/><line x1="6" y1="12" x2="6" y2="16"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="18" y1="12" x2="18" y2="16"/></svg></span>Industriala</a>
+            <a href="../../clima/rezidentiala/index.html" class="dd-link"><span class="dd-ico ico-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>Rezidentiala</a>
+            <a href="../../clima/auto-utilaje/index.html" class="dd-link"><span class="dd-ico ico-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>Auto si Utilaje</a>
+          </div>
+        </div>
+        <div class="dd-item">
+          <button class="dd-link" data-dd>
+            <span class="dd-ico ico-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>Service A.C. <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="dd2">
+            <a href="../../service/igienizare/index.html" class="dd-link"><span class="dd-ico ico-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>Igienizare</a>
+            <a href="../../service/reparatii/index.html" class="dd-link"><span class="dd-ico ico-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>Reparatii</a>
+            <a href="../../service/mentenanta/index.html" class="dd-link"><span class="dd-ico ico-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>Mentenanta</a>
+            <a href="../../service/revizii/index.html" class="dd-link"><span class="dd-ico ico-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>Revizii</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item"><a href="../../index.html#galerie">Galerie</a></li>
+    <li class="nav-item"><a href="../../index.html#recenzii">Recenzii</a></li>
+    <li class="nav-item"><a href="../../index.html#contact">Contact</a></li>
+    <li class="nav-item"><a href="tel:+40758552980" class="nav-cta">Suna acum</a></li>
+  </ul>
+</div>
+</nav>
+
+<div class="crumbs">
+  <a href="../../index.html">Acasa</a><span class="sep">/</span>
+  <span>Service A.C.</span><span class="sep">/</span>
+  <span class="cur">Revizii A.C.</span>
+</div>
+
+<section class="p-hero">
+<div class="p-hero-grid"></div>
+<div class="p-hero-inner">
+  <div class="p-kicker rv">Service A.C. / 04</div>
+  <h1 class="p-title rv">Revizii A.C.</h1>
+  <p class="p-lead rv">Verificare tehnica completa: presiuni, traseu frigorific, filtre, instalatie electrica. Recomandat anual.</p>
+  <div class="btn-row rv">
+    <a href="https://wa.me/40758552980?text=Buna%2C%20vreau%20sa%20programez%20o%20revizie%20AC." class="btn btn-navy"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg> Cere oferta personalizata</a>
+    <a href="tel:+40758552980" class="btn btn-ghost">0758 552 980</a>
+  </div>
+</div>
+</section>
+
+<section class="sec">
+<div class="sec-inner">
+  <div class="split">
+    <div class="split-media rv">
+      <img src="../../images/gal-igienizare-ac.jpg" alt="Revizii A.C.">
+      <span class="split-tag">REVIZII</span>
+    </div>
+    <div class="rv">
+      <div class="eyebrow">Specificatii</div>
+      <h2 class="h2" style="font-size:1.5rem">Date tehnice</h2>
+      <div class="specs"><div class="spec"><div class="spec-l">Frecventa</div><div class="spec-v">Anual, inainte de sezon</div></div><div class="spec"><div class="spec-l">Verificari</div><div class="spec-v">Presiuni, trasee, electric</div></div><div class="spec"><div class="spec-l">Durata</div><div class="spec-v">30 – 60 min / unitate</div></div><div class="spec"><div class="spec-l">Include</div><div class="spec-v">Curatare filtre + raport</div></div></div>
+      <ul class="checks"><li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Verificare presiune agent frigorific</li><li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Control traseu frigorific si conexiuni electrice</li><li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Curatare filtre si verificare drenaj</li></ul>
+      <a href="https://wa.me/40758552980?text=Buna%2C%20vreau%20sa%20programez%20o%20revizie%20AC." class="btn btn-navy">Cere oferta</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="sec alt">
+<div class="sec-inner center">
+  <div class="eyebrow rv">Procedura</div>
+  <h2 class="h2 rv">Cum lucram</h2>
+  <p class="sub rv">Pasi simpli, comunicare clara, rezultat garantat.</p>
+  <div class="steps"><div class="step rv"><span class="step-n mono">01</span><h4>Programare</h4><p>Alegem ziua — ideal inainte de vara.</p></div><div class="step rv"><span class="step-n mono">02</span><h4>Verificari</h4><p>Presiuni, trasee, conexiuni, filtre.</p></div><div class="step rv"><span class="step-n mono">03</span><h4>Reglaje</h4><p>Aducem sistemul in parametri optimi.</p></div><div class="step rv"><span class="step-n mono">04</span><h4>Raport</h4><p>Primesti fisa tehnica cu starea aparatului.</p></div></div>
+</div>
+</section>
+
+<section class="sec">
+<div class="sec-inner center">
+  <div class="eyebrow rv">Alte servicii</div>
+  <h2 class="h2 rv" style="font-size:1.4rem">Te-ar putea interesa si</h2>
+  <br>
+  <div class="related" style="justify-content:center"><a href="../../service/igienizare/index.html" class="rel-link">Igienizare <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a href="../../service/mentenanta/index.html" class="rel-link">Mentenanta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a href="../../service/reparatii/index.html" class="rel-link">Reparatii <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+</div>
+</section>
+
+<section class="price">
+<div class="price-in">
+  <h2 class="rv">Pretul se stabileste la fata locului</h2>
+  <p class="rv">Evaluam gratuit si primesti o oferta personalizata, clara, fara costuri ascunse.</p>
+  <div class="price-pill rv">Evaluare gratuita &middot; Oferta personalizata</div>
+  <br>
+  <a href="https://wa.me/40758552980?text=Buna%20ziua%2C%20as%20dori%20o%20evaluare%20gratuita." class="btn btn-orange rv">Programeaza evaluare gratuita</a>
+</div>
+</section>
+<footer class="footer">
+<div class="footer-in">
+  <div class="footer-logo"><img src="../../images/logo.jpg" alt="Clima Expert HVAC"></div>
+  <div class="f-cols">
+    <div class="f-col">
+      <h5>Climatizare</h5>
+      <a href="../../clima/industriala/index.html">Industriala</a>
+      <a href="../../clima/rezidentiala/index.html">Rezidentiala</a>
+      <a href="../../clima/auto-utilaje/index.html">Auto si Utilaje</a>
+    </div>
+    <div class="f-col">
+      <h5>Service A.C.</h5>
+      <a href="../../service/igienizare/index.html">Igienizare</a>
+      <a href="../../service/reparatii/index.html">Reparatii</a>
+      <a href="../../service/mentenanta/index.html">Mentenanta</a>
+      <a href="../../service/revizii/index.html">Revizii</a>
+    </div>
+    <div class="f-col">
+      <h5>Contact</h5>
+      <a href="tel:+40758552980">0758 552 980</a>
+      <a href="https://wa.me/40758552980">WhatsApp</a>
+      <a href="https://maps.google.com/?q=Gheorgeni+Soporului+Cluj-Napoca">Gheorgeni, Cluj-Napoca</a>
+    </div>
+  </div>
+  <div></div>
+</div>
+<div class="f-bottom">&copy; <span id="yr"></span> Clima Expert HVAC — Cluj-Napoca. Toate drepturile rezervate.</div>
+</footer>
+
+<a href="https://wa.me/40758552980" class="wa-float" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg></a>
+<div class="mob-bar">
+  <a href="tel:+40758552980" class="mb-c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Suna</a>
+  <a href="https://wa.me/40758552980" class="mb-w"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>WhatsApp</a>
+</div>
+<script src="../../js/main.js"></script>
+</body>
+</html>
