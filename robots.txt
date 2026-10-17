@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://coredigital-cz.github.io/final6/sitemap.xml
